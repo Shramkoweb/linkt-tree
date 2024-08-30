@@ -1,0 +1,42 @@
+{
+    "name": "Serhii Shramko",
+    "profession": "Senior Software Engineer at MacPaw",
+    "links": [
+        {
+            "url": "https://shramko.dev/",
+            "icon": "url",
+            "title": "Personal Portfolio",
+            "description": "All my latest news and blog posts"
+        },
+        {
+            "url": "https://github.com/serhii-shramko",
+            "icon": "github",
+            "title": "Github Profile",
+            "description": "My Github"
+        },
+        {
+            "url": "https://www.youtube.com/@shramko-dev",
+            "icon": "youtube",
+            "title": "Youtube Channel",
+            "description": "Comming soon 🚀"
+        },
+        {
+            "url": "https://www.instagram.com/serhii.shramko",
+            "icon": "instagram",
+            "title": "Instagram Profile",
+            "description": "My personal Instagram"
+        },
+        {
+            "url": "https://www.linkedin.com/in/serhii-shramko-000000250/",
+            "icon": "linkedin",
+            "title": "Linkedin Profile",
+            "description": "My Linkedin"   
+        },
+        {
+            "url": "https://shramko.dev/static/serhii-shramko-resume.pdf",
+            "icon": "pdf",
+            "title": "Resume",
+            "description": "My Resume in PDF format"
+        }
+    ]
+}
