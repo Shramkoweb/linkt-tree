@@ -1,11 +1,11 @@
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig, sharpImageService } from 'astro/config';
 import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
   image: {
-    service: squooshImageService(),
+    service: sharpImageService(),
   },
   adapter: vercel({
     webAnalytics: {
