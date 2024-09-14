@@ -6,37 +6,37 @@
       "url": "https://shramko.dev/",
       "icon": "url",
       "title": "Personal Portfolio",
-      "description": "All my latest news and blog posts"
+      "description": "All my latest news, blog posts and snippets"
     },
     {
       "url": "https://github.com/Shramkoweb",
       "icon": "github",
-      "title": "Github Profile",
-      "description": "My Github"
+      "title": "GitHub",
+      "description": "My GitHub profile"
     },
     {
       "url": "https://www.youtube.com/@shramko-dev",
       "icon": "youtube",
-      "title": "Youtube Channel",
-      "description": "Comming soon 🚀"
+      "title": "YouTube Channel",
+      "description": "Coming soon 🚀"
     },
     {
       "url": "https://www.instagram.com/serhii.shramko",
       "icon": "instagram",
-      "title": "Instagram Profile",
+      "title": "Instagram",
       "description": "My personal Instagram"
     },
     {
       "url": "https://www.linkedin.com/in/shramko-dev/",
       "icon": "linkedin",
-      "title": "Linkedin Profile",
-      "description": "My Linkedin"
+      "title": "LinkedIn",
+      "description": "My LinkedIn profile"
     },
     {
       "url": "https://shramko.dev/static/serhii-shramko-resume.pdf",
       "icon": "pdf",
       "title": "Resume",
-      "description": "My Resume in PDF format"
+      "description": "My resume in PDF format"
     }
   ]
 }
