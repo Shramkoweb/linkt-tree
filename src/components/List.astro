@@ -4,20 +4,18 @@ import { links } from '../data/user.json';
 ---
 
 <ul class="list" id="list">
-    {links.map(({ icon, title, description, url }) => {
-        return (
-                <li>
-                    <Link icon={icon} title={title} description={description} url={url} />
-                </li>)
-    })}
+  {links.map(({ icon, title, description, url }) => (
+    <li>
+      <Link icon={icon} title={title} description={description} url={url} />
+    </li>))}
 </ul>
 
 <style>
-    .list {
-        margin: 2rem auto;
-        display: grid;
-        gap: 1rem;
-        max-width: calc(100% - 2rem);
-        list-style: none;
-    }
+  .list {
+    margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+    max-width: calc(100% - 2rem);
+    list-style: none;
+  }
 </style>

@@ -4,58 +4,58 @@ import dataList from '../data/user.json';
 ---
 
 <header class="profile">
-    <div class="profile__picture-content">
-        <figure class="profile__picture">
-            <img src={UserProfileImage.src} alt="Serhii Shramko is eating pizza.">
-        </figure>
-    </div>
-    <div class="profile__data">
-        <h1 class="profile__name">{dataList.name}</h1>
-        <p class="profile__profession">{dataList.profession}</p>
-    </div>
+  <div class="profile__picture-content">
+    <figure class="profile__picture">
+      <img src={UserProfileImage.src} alt="Serhii Shramko is eating pizza.">
+    </figure>
+  </div>
+  <div class="profile__data">
+    <h1 class="profile__name">{dataList.name}</h1>
+    <p class="profile__profession">{dataList.profession}</p>
+  </div>
 </header>
 
 <style>
-    .profile {
-        margin-top: 6rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .profile {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .profile__picture-content {
-        padding: 0.5rem;
-        border-radius: 100%;
-        border: 1px solid var(--zinc-800);
-    }
+  .profile__picture-content {
+    padding: 0.5rem;
+    border-radius: 100%;
+    border: 1px solid var(--zinc-800);
+  }
 
-    .profile__picture {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 100%;
-        border: 1px solid var(--zinc-800);
-        overflow: hidden;
-    }
+  .profile__picture {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 1px solid var(--zinc-800);
+    overflow: hidden;
+  }
 
-    .profile__picture img {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+  .profile__picture img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
-    .profile__data {
-        margin-top: 1.125rem;
-        text-align: center;
-    }
+  .profile__data {
+    margin-top: 1.125rem;
+    text-align: center;
+  }
 
-    .profile__name {
-        font-size: 1.125rem;
-        font-weight: normal;
-    }
+  .profile__name {
+    font-size: 1.125rem;
+    font-weight: normal;
+  }
 
-    .profile__profession {
-        font-size: 0.875rem;
-        color: var(--zinc-400);
-    }
+  .profile__profession {
+    font-size: 0.875rem;
+    color: var(--zinc-400);
+  }
 </style>

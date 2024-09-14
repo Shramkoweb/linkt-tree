@@ -7,10 +7,10 @@ import Pdf from "./icons/pdf.astro";
 import Github from "./icons/github.astro";
 
 interface Props {
-    icon: string;
-    title: string;
-    description: string;
-    url: string;
+  icon: string;
+  title: string;
+  description: string;
+  url: string;
 }
 
 const { icon, title, description, url } = Astro.props;
@@ -18,57 +18,63 @@ const { icon, title, description, url } = Astro.props;
 
 <a href={url} class="link" target="_blank">
     <span class="link__icon">
-        {icon === 'instagram' && <Instagram />}
-        {icon === 'linkedin' && <Linkedin />}
-        {icon === 'url' && <Url />}
-        {icon === 'youtube' && <Youtube />}
-        {icon === 'github' && <Github />}
-        {icon === 'pdf' && <Pdf />}
+        {icon === 'instagram' &&
+          <Instagram />}
+      {icon === 'linkedin' &&
+        <Linkedin />}
+      {icon === 'url' &&
+        <Url />}
+      {icon === 'youtube' &&
+        <Youtube />}
+      {icon === 'github' &&
+        <Github />}
+      {icon === 'pdf' &&
+        <Pdf />}
     </span>
 
-    <div class="link__content">
-        <h2 class="link__title">{title}</h2>
-        <p class="link__description">{description}</p>
-    </div>
+  <div class="link__content">
+    <h2 class="link__title">{title}</h2>
+    <p class="link__description">{description}</p>
+  </div>
 </a>
 
 <style>
-    .link {
-        padding: 0.75rem;
-        display: flex;
-        border: 1px solid var(--zinc-800);
-        border-radius: 1rem;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
-    }
+  .link {
+    padding: 0.75rem;
+    display: flex;
+    border: 1px solid var(--zinc-800);
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
 
-    .link:hover {
-        border: 1px solid var(--zinc-50);
-    }
+  .link:hover {
+    border: 1px solid var(--zinc-50);
+  }
 
-    .link__icon {
-        width: 3rem;
-        height: 3rem;
-        margin-right: 1.125rem;
-        background: var(--zinc-900);
-        border-radius: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .link__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.125rem;
+    background: var(--zinc-900);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .link__title,
-    .link__description {
-        font-size: 1rem;
-    }
+  .link__title,
+  .link__description {
+    font-size: 1rem;
+  }
 
-    .link__title {
-        color: var(--zinc-50);
-        font-weight: normal;
-    }
+  .link__title {
+    color: var(--zinc-50);
+    font-weight: normal;
+  }
 
-    .link__description {
-        color: var(--zinc-400);
-        margin-top: 0.125rem;
-    }
+  .link__description {
+    color: var(--zinc-400);
+    margin-top: 0.125rem;
+  }
 </style>
