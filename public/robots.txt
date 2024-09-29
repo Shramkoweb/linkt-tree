@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://links.shramko.dev/sitemap-index.xml
