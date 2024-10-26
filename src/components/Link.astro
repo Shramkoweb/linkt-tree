@@ -5,6 +5,7 @@ import Url from "./icons/url.astro";
 import Youtube from "./icons/youtube.astro";
 import Pdf from "./icons/pdf.astro";
 import Github from "./icons/github.astro";
+import ProductHunt from "./icons/producthunt.astro";
 
 interface Props {
   icon: string;
@@ -30,6 +31,8 @@ const { icon, title, description, url } = Astro.props;
         <Github />}
       {icon === 'pdf' &&
         <Pdf />}
+      {icon === 'producthunt' &&
+        <ProductHunt />}
     </span>
 
   <div class="link__content">

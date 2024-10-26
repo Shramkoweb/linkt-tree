@@ -9,6 +9,12 @@
       "description": "All my latest news, blog posts and snippets"
     },
     {
+      "url": "https://www.producthunt.com/@shramko_dev",
+      "icon": "producthunt",
+      "title": "Product Hunt",
+      "description": "My Product Hunt profile"
+    },
+    {
       "url": "https://github.com/Shramkoweb",
       "icon": "github",
       "title": "GitHub",
