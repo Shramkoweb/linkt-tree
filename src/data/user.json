@@ -4,45 +4,45 @@
   "links": [
     {
       "url": "https://shramko.dev/",
-      "icon": "url",
-      "title": "Personal Portfolio",
-      "description": "All my latest news, blog posts and snippets"
+      "icon": "star",
+      "title": "Portfolio",
+      "description": "Dive into my world of code, coffee, and quirky blogs"
     },
     {
       "url": "https://www.producthunt.com/@shramko_dev",
       "icon": "producthunt",
       "title": "Product Hunt",
-      "description": "My Product Hunt profile"
-    },
-    {
-      "url": "https://github.com/Shramkoweb",
-      "icon": "github",
-      "title": "GitHub",
-      "description": "My GitHub profile"
-    },
-    {
-      "url": "https://www.youtube.com/@shramko-dev",
-      "icon": "youtube",
-      "title": "YouTube Channel",
-      "description": "Coming soon 🚀"
-    },
-    {
-      "url": "https://www.instagram.com/serhii.shramko",
-      "icon": "instagram",
-      "title": "Instagram",
-      "description": "My personal Instagram"
+      "description": "See what I’ve been hunting in the wild world of products"
     },
     {
       "url": "https://www.linkedin.com/in/shramko-dev/",
       "icon": "linkedin",
       "title": "LinkedIn",
-      "description": "My LinkedIn profile"
+      "description": "Let’s get professionally connected—networking hats on"
+    },
+    {
+      "url": "https://github.com/Shramkoweb",
+      "icon": "github",
+      "title": "GitHub",
+      "description": "Peek into my code labs and secret projects"
+    },
+    {
+      "url": "https://www.youtube.com/@shramko-dev",
+      "icon": "youtube",
+      "title": "YouTube",
+      "description": "Coming soon: Tutorials, LeetCode, and more"
+    },
+    {
+      "url": "https://www.instagram.com/serhii.shramko",
+      "icon": "instagram",
+      "title": "Instagram",
+      "description": "Catch my life in snapshots — no filters (maybe)"
     },
     {
       "url": "https://shramko.dev/static/serhii-shramko-resume.pdf",
       "icon": "pdf",
       "title": "Resume",
-      "description": "My resume in PDF format"
+      "description": "Check out my tech journey, summarized and stylized"
     }
   ]
 }

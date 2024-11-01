@@ -1,11 +1,11 @@
 ---
 import Instagram from "./icons/instagram.astro";
 import Linkedin from "./icons/linkedin.astro";
-import Url from "./icons/url.astro";
 import Youtube from "./icons/youtube.astro";
 import Pdf from "./icons/pdf.astro";
 import Github from "./icons/github.astro";
 import ProductHunt from "./icons/producthunt.astro";
+import Star from "./icons/star.astro";
 
 interface Props {
   icon: string;
@@ -23,8 +23,8 @@ const { icon, title, description, url } = Astro.props;
           <Instagram />}
       {icon === 'linkedin' &&
         <Linkedin />}
-      {icon === 'url' &&
-        <Url />}
+      {icon === 'star' &&
+        <Star />}
       {icon === 'youtube' &&
         <Youtube />}
       {icon === 'github' &&
@@ -56,10 +56,11 @@ const { icon, title, description, url } = Astro.props;
   }
 
   .link__icon {
+    color: red;
     width: 3rem;
     height: 3rem;
     margin-right: 1.125rem;
-    background: var(--zinc-900);
+    background-color: var(--zinc-900);
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
