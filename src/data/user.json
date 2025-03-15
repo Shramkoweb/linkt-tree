@@ -33,12 +33,6 @@
       "description": "Coming soon: Tutorials, LeetCode, and more"
     },
     {
-      "url": "https://www.instagram.com/serhii.shramko",
-      "icon": "instagram",
-      "title": "Instagram",
-      "description": "Catch my life in snapshots — no filters (maybe)"
-    },
-    {
       "url": "https://shramko.dev/static/serhii_shramko_frontend.pdf",
       "icon": "pdf",
       "title": "Resume",
