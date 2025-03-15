@@ -6,6 +6,7 @@ import Pdf from "./icons/pdf.astro";
 import Github from "./icons/github.astro";
 import ProductHunt from "./icons/producthunt.astro";
 import Star from "./icons/star.astro";
+import Message from "./icons/message.astro";
 
 interface Props {
   icon: string;
@@ -33,6 +34,8 @@ const { icon, title, description, url } = Astro.props;
         <Pdf />}
       {icon === 'producthunt' &&
         <ProductHunt />}
+      {icon === 'message' &&
+        <Message />}
     </span>
 
   <div class="link__content">

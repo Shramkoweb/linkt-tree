@@ -27,6 +27,12 @@
       "description": "Peek into my code labs and secret projects"
     },
     {
+      "url": "https://bsky.app/profile/shramko-dev.bsky.social",
+      "icon": "message",
+      "title": "Bluesky",
+      "description": "Follow me on Bluesky for updates and musings"
+    },
+    {
       "url": "https://www.youtube.com/@shramko-dev",
       "icon": "youtube",
       "title": "YouTube",
