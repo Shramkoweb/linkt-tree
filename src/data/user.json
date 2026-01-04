@@ -3,46 +3,46 @@
   "profession": "Senior Software Engineer",
   "links": [
     {
+      "url": "https://nerdlift.io",
+      "icon": "rocket",
+      "title": "NerdLift",
+      "description": "A product I’m building in public—focused on learning, growth, and lifting fellow nerds"
+    },
+    {
+      "url": "https://www.twitch.tv/shramko_dev",
+      "icon": "twitch",
+      "title": "Twitch",
+      "description": "Live coding sessions, system design, and building NerdLift in public"
+    },
+    {
       "url": "https://shramko.dev/",
       "icon": "star",
       "title": "Portfolio",
-      "description": "Dive into my world of code, coffee, and quirky blogs"
+      "description": "Projects, writing, and notes on building real software"
     },
     {
       "url": "https://www.producthunt.com/@shramko_dev",
       "icon": "producthunt",
       "title": "Product Hunt",
-      "description": "See what I’ve been hunting in the wild world of products"
+      "description": "Products I’ve launched, explored, and learned from"
     },
     {
       "url": "https://www.linkedin.com/in/shramko-dev/",
       "icon": "linkedin",
       "title": "LinkedIn",
-      "description": "Let’s get professionally connected—networking hats on"
+      "description": "Professional background, experience, and engineering journey"
     },
     {
       "url": "https://github.com/Shramkoweb",
       "icon": "github",
       "title": "GitHub",
-      "description": "Peek into my code labs and secret projects"
+      "description": "Source code, experiments, and work-in-progress ideas"
     },
     {
       "url": "https://bsky.app/profile/shramko-dev.bsky.social",
       "icon": "message",
       "title": "Bluesky",
-      "description": "Follow me on Bluesky for updates and musings"
-    },
-    {
-      "url": "https://www.youtube.com/@shramko-dev",
-      "icon": "youtube",
-      "title": "YouTube",
-      "description": "Coming soon: Tutorials, LeetCode, and more"
-    },
-    {
-      "url": "https://shramko.dev/static/serhii_shramko_frontend.pdf",
-      "icon": "pdf",
-      "title": "Resume",
-      "description": "Check out my tech journey, summarized and stylized"
+      "description": "Short updates, thoughts, and progress while building in public"
     }
   ]
 }
