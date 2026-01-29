@@ -3,18 +3,6 @@
   "profession": "Senior Software Engineer",
   "links": [
     {
-      "url": "https://nerdlift.io",
-      "icon": "rocket",
-      "title": "NerdLift",
-      "description": "A product I’m building in public—focused on learning, growth, and lifting fellow nerds"
-    },
-    {
-      "url": "https://www.twitch.tv/shramko_dev",
-      "icon": "twitch",
-      "title": "Twitch",
-      "description": "Live coding sessions, system design, and building NerdLift in public"
-    },
-    {
       "url": "https://shramko.dev/",
       "icon": "star",
       "title": "Portfolio",
@@ -27,6 +15,18 @@
       "description": "Products I’ve launched, explored, and learned from"
     },
     {
+      "url": "https://github.com/Shramkoweb",
+      "icon": "github",
+      "title": "GitHub",
+      "description": "Source code, experiments, and work-in-progress ideas"
+    },
+    {
+      "url": "https://www.twitch.tv/shramko_dev",
+      "icon": "twitch",
+      "title": "Twitch",
+      "description": "Live coding sessions, system design, and building NerdLift in public"
+    },
+    {
       "url": "https://www.reddit.com/user/shramko_dev/",
       "icon": "reddit",
       "title": "Reddit",
@@ -37,12 +37,6 @@
       "icon": "linkedin",
       "title": "LinkedIn",
       "description": "Professional background, experience, and engineering journey"
-    },
-    {
-      "url": "https://github.com/Shramkoweb",
-      "icon": "github",
-      "title": "GitHub",
-      "description": "Source code, experiments, and work-in-progress ideas"
     },
     {
       "url": "https://bsky.app/profile/shramko-dev.bsky.social",
