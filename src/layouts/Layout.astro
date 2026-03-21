@@ -2,6 +2,9 @@
 import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-700.css';
 
+import interLatin400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import interLatin700 from '@fontsource/inter/files/inter-latin-700-normal.woff2?url';
+
 interface Props {
   title: string;
   description?: string;
@@ -17,6 +20,8 @@ const ogImage = new URL('/og-image.png', Astro.site);
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <link rel="preload" as="font" type="font/woff2" href={interLatin400} crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href={interLatin700} crossorigin />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
