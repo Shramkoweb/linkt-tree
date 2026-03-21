@@ -1,0 +1,56 @@
+export type IconName = "instagram" | "linkedin" | "star" | "youtube" | "github" | "pdf" | "producthunt" | "message" | "twitch" | "rocket" | "reddit";
+
+interface UserLink {
+  url: string;
+  icon: IconName;
+  title: string;
+  description: string;
+}
+
+export const name = "Serhii Shramko";
+export const profession = "Senior Software Engineer";
+
+export const links: UserLink[] = [
+  {
+    url: "https://shramko.dev/",
+    icon: "star",
+    title: "Portfolio",
+    description: "Projects, writing, and notes on building real software"
+  },
+  {
+    url: "https://www.producthunt.com/@shramko_dev",
+    icon: "producthunt",
+    title: "Product Hunt",
+    description: "Products I've launched, explored, and learned from"
+  },
+  {
+    url: "https://github.com/Shramkoweb",
+    icon: "github",
+    title: "GitHub",
+    description: "Source code, experiments, and work-in-progress ideas"
+  },
+  {
+    url: "https://www.twitch.tv/shramko_dev",
+    icon: "twitch",
+    title: "Twitch",
+    description: "Live coding sessions, system design, and building NerdLift in public"
+  },
+  {
+    url: "https://www.reddit.com/user/shramko_dev/",
+    icon: "reddit",
+    title: "Reddit",
+    description: "My thoughts, opinions, and experiences on software engineering"
+  },
+  {
+    url: "https://www.linkedin.com/in/shramko-dev/",
+    icon: "linkedin",
+    title: "LinkedIn",
+    description: "Professional background, experience, and engineering journey"
+  },
+  {
+    url: "https://bsky.app/profile/shramko-dev.bsky.social",
+    icon: "message",
+    title: "Bluesky",
+    description: "Short updates, thoughts, and progress while building in public"
+  }
+];
