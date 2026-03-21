@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import UserProfileImage from '../assets/user-profile-image.png'
-import dataList from '../data/user.json';
+import { name, profession } from '../data/user';
 ---
 
 <header class="profile">
@@ -12,14 +12,14 @@ import dataList from '../data/user.json';
         height="160"
         src={UserProfileImage}
         densities={[1, 2]}
-        quality="max"
+        quality={80}
         loading="eager"
         alt="Serhii Shramko is eating pizza." />
     </figure>
   </div>
   <div class="profile__data">
-    <h1 class="profile__name">{dataList.name}</h1>
-    <p class="profile__profession">{dataList.profession}</p>
+    <h1 class="profile__name">{name}</h1>
+    <p class="profile__profession">{profession}</p>
   </div>
 </header>
 

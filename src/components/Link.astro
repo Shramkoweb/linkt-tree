@@ -10,9 +10,10 @@ import Message from "./icons/message.astro";
 import Twitch from "./icons/twitch.astro";
 import Rocket from "./icons/rocket.astro";
 import Reddit from "./icons/reddit.astro";
+import type { IconName } from '../data/user';
 
 interface Props {
-  icon: "instagram" | "linkedin" | "star" | "youtube" | "github" | "pdf" | "producthunt" | "message" | "twitch" | "rocket" | "reddit";
+  icon: IconName;
   title: string;
   description: string;
   url: string;
@@ -45,7 +46,7 @@ const IconComponent = {
     border: 1px solid var(--zinc-800);
     border-radius: 1rem;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
   }
 
   .link:hover,
@@ -73,6 +74,10 @@ const IconComponent = {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .link__content {
+    min-width: 0;
   }
 
   .link__title,

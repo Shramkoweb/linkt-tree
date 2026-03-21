@@ -1,15 +1,12 @@
 ---
-import type { ComponentProps } from 'astro/types';
 import Link from "./Link.astro";
-import { links } from '../data/user.json';
-
-type IconName = ComponentProps<typeof Link>['icon'];
+import { links } from '../data/user';
 ---
 
-<ul class="list" id="list">
+<ul class="list">
   {links.map(({ icon, title, description, url }) => (
     <li>
-      <Link icon={icon as IconName} title={title} description={description} url={url} />
+      <Link icon={icon} title={title} description={description} url={url} />
     </li>))}
 </ul>
 
