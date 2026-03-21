@@ -20,6 +20,7 @@ const profileImage = await getImage({
     rel="preload"
     as="image"
     type="image/webp"
+    fetchpriority="high"
     href={profileImage.src}
     imagesrcset={profileImage.srcSet.attribute}
   />
