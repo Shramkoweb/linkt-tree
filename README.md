@@ -1,67 +1,87 @@
-# 🌳 Linkt Tree
+# Link Tree
 
-A modern, customizable link tree application built with Astro. Share all your important links in one beautiful, responsive page.
+A fast, single-file-config link tree built with [Astro](https://astro.build/). Edit one TypeScript file, deploy, and
+share all your links on a single page.
 
-## 🚀 Features
+[Live Demo](https://links.shramko.dev/)
 
-- ⚡️ Lightning fast performance with Astro
-- 🎨 Modern and clean design
-- 📱 Fully responsive
-- 🔧 Easy to customize
-- 🌙 Dark mode support
-- 🔗 SEO optimized
+## Quick Start
 
-## 🛠️ Tech Stack
+**Prerequisites:** Node.js >= 22.12.0, [pnpm](https://pnpm.io/)
 
-- [Astro](https://astro.build/) - Static Site Generator
-- Modern CSS with Flexbox/Grid
-- Responsive Design
-- TypeScript for type safety
-
-## 🚦 Getting Started
-
-1. Clone the repository:
 ```bash
 git clone https://github.com/Shramkoweb/linkt-tree.git
-```
-
-2. Install dependencies:
-```bash
+cd linkt-tree
 pnpm install
-```
-
-3. Start the development server:
-```bash
 pnpm dev
 ```
 
-4. Open [http://localhost:4321](http://localhost:4321) in your browser
+Open [http://localhost:4321](http://localhost:4321) to see it running.
 
-## 📝 Available Commands
+## Customization
 
-| Command           | Action                                       |
-| :--------------- | :------------------------------------------- |
-| `pnpm install`    | Install dependencies                         |
-| `pnpm dev`    | Start dev server at `localhost:4321`         |
-| `pnpm build`  | Build for production to `./dist/`           |
-| `pnpm preview`| Preview production build locally             |
+All personal data lives in a single file: [`src/data/user.ts`](src/data/user.ts).
 
-## 📂 Project Structure
+```ts
+export const name = "Your Name";
+export const profession = "Your Title";
 
-```text
-/
-├── public/         # Static assets
+export const links: UserLink[] = [
+  {
+    url: "https://example.com",
+    icon: "github",
+    title: "GitHub",
+    description: "Short description of this link",
+  },
+];
+```
+
+**Available icons:** `github`, `instagram`, `linkedin`, `message`, `pdf`, `producthunt`, `reddit`, `rocket`, `star`,
+`twitch`, `youtube`.
+
+To use your own profile picture, replace `src/assets/user-profile-image.png`.
+
+## Commands
+
+| Command        | Action                               |
+|:---------------|:-------------------------------------|
+| `pnpm dev`     | Start dev server at `localhost:4321` |
+| `pnpm build`   | Type-check and build to `./dist/`    |
+| `pnpm preview` | Preview production build locally     |
+
+## Project Structure
+
+```
 ├── src/
-│   ├── components/ # UI components
-│   ├── layouts/    # Page layouts
-│   └── pages/      # Page components
+│   ├── assets/          # Images (profile picture)
+│   ├── components/      # UI components (Profile, Link, List)
+│   │   └── icons/       # SVG icon components
+│   ├── data/            # User configuration (user.ts)
+│   ├── layouts/         # Page layouts
+│   └── pages/           # Page routes
+├── public/              # Static assets (favicon, robots.txt)
+├── astro.config.mjs
+├── tsconfig.json
 └── package.json
 ```
 
-## 🤝 Contributing
+## Tech Stack
 
-Contributions, issues, and feature requests are welcome!
+- [Astro](https://astro.build/) v6 — static site generation with on-demand rendering via Vercel adapter
+- [TypeScript](https://www.typescriptlang.org/) — type-safe link configuration
+- [Sharp](https://sharp.pixelplumbing.com/) — optimized image processing
+- [Inter](https://rsms.me/inter/) — typeface via Fontsource
 
-## 📜 License
+## Deployment
 
-This project is licensed under the MIT License.
+The project is configured for [Vercel](https://vercel.com/) out of the box (`@astrojs/vercel` adapter + web analytics).
+To deploy elsewhere, swap the adapter in `astro.config.mjs` —
+see [Astro deployment docs](https://docs.astro.build/en/guides/deploy/).
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+## License
+
+[MIT](./LICENSE) © 2024-present Serhii Shramko
