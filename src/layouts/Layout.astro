@@ -1,9 +1,9 @@
 ---
-import '@fontsource/inter/latin-400.css';
-import '@fontsource/inter/latin-700.css';
+import "@fontsource/inter/latin-400.css";
+import "@fontsource/inter/latin-700.css";
 
-import interLatin400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
-import interLatin700 from '@fontsource/inter/files/inter-latin-700-normal.woff2?url';
+import interLatin400 from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
+import interLatin700 from "@fontsource/inter/files/inter-latin-700-normal.woff2?url";
 
 interface Props {
   title: string;
@@ -13,44 +13,45 @@ interface Props {
 const { title, description = "Serhii Shramko's link tree" } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/og-image.png', Astro.site);
+const ogImage = new URL("/og-image.png", Astro.site);
 ---
 
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <link rel="preload" as="font" type="font/woff2" href={interLatin400} crossorigin />
-  <link rel="preload" as="font" type="font/woff2" href={interLatin700} crossorigin />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="description" content={description}/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="canonical" href={canonicalURL} />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preload" as="font" type="font/woff2" href={interLatin400} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={interLatin700} crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={canonicalURL} />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content={canonicalURL}>
-  <meta property="og:type" content="website">
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="og:image" content={ogImage}>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content={canonicalURL}>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content={ogImage}>
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content={canonicalURL.hostname}>
-  <meta property="twitter:url" content={canonicalURL}>
-  <meta name="twitter:title" content={title}>
-  <meta name="twitter:description" content={description}>
-  <meta name="twitter:image" content={ogImage}>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content={canonicalURL.hostname}>
+    <meta property="twitter:url" content={canonicalURL}>
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={ogImage}>
 
-  <link rel="sitemap" href="/sitemap-index.xml"/>
-  <title>{title}</title>
-</head>
-<body>
-<slot/>
-</body>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a href="#links-nav" class="skip-link">Skip to links</a>
+    <slot />
+  </body>
 </html>
 <style is:global>
   :root {
@@ -76,5 +77,30 @@ const ogImage = new URL('/og-image.png', Astro.site);
   .container {
     margin: auto;
     max-width: 600px;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background: var(--zinc-50);
+    color: var(--zinc-950);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.25rem;
+  }
+
+  .skip-link:focus {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
   }
 </style>

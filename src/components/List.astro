@@ -1,14 +1,16 @@
 ---
 import Link from "./Link.astro";
-import { links } from '../data/user';
+import { links } from "../data/user";
 ---
 
-<ul class="list">
-  {links.map(({ icon, title, description, url }) => (
-    <li>
-      <Link icon={icon} title={title} description={description} url={url} />
-    </li>))}
-</ul>
+<nav id="links-nav" aria-label="Social links" tabindex="-1">
+  <ul class="list" role="list">
+    {links.map(({ icon, title, description, url }) => (
+      <li>
+        <Link icon={icon} title={title} description={description} url={url} />
+      </li>))}
+  </ul>
+</nav>
 
 <style>
   .list {

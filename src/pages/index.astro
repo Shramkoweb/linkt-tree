@@ -1,12 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Profile from '../components/Profile.astro';
-import List from '../components/List.astro';
+import Layout from "../layouts/Layout.astro";
+import Profile from "../components/Profile.astro";
+import List from "../components/List.astro";
 ---
 
 <Layout title="Link tree | Serhii Shramko">
-  <main class="container">
+  <div class="container">
     <Profile />
-    <List />
-  </main>
+    <main>
+      <List />
+    </main>
+  </div>
 </Layout>
