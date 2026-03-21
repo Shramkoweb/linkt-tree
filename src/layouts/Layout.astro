@@ -1,9 +1,13 @@
 ---
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-700.css';
+
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = "Serhii Shramko's link tree" } = Astro.props;
 ---
 
 <!doctype html>
@@ -14,14 +18,14 @@ const { title } = Astro.props;
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="description" content="Serhii Shramko's link tree"/>
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="description" content={description}/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://links.shramko.dev/">
   <meta property="og:type" content="website">
   <meta property="og:title" content={title}>
-  <meta property="og:description" content="Serhii Shramko's link tree">
+  <meta property="og:description" content={description}>
   <meta property="og:image" content="https://links.shramko.dev/og-image.png">
 
   <!-- Twitter Meta Tags -->
@@ -29,7 +33,7 @@ const { title } = Astro.props;
   <meta property="twitter:domain" content="links.shramko.dev">
   <meta property="twitter:url" content="https://links.shramko.dev/">
   <meta name="twitter:title" content={title}>
-  <meta name="twitter:description" content="Serhii Shramko's link tree">
+  <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content="https://links.shramko.dev/og-image.png">
 
   <link rel="sitemap" href="/sitemap-index.xml"/>
@@ -58,11 +62,6 @@ const { title } = Astro.props;
     font-family: 'Inter', sans-serif;
     background: var(--zinc-950);
     color: var(--zinc-50)
-  }
-
-  span svg {
-    width: 1.5rem;
-    color: var(--zinc-50);
   }
 
   .container {
