@@ -1,10 +1,28 @@
 ---
+import { getImage } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Profile from "../components/Profile.astro";
 import List from "../components/List.astro";
+import UserProfileImage from "../assets/user-profile-image.png";
+
+const profileImage = await getImage({
+  src: UserProfileImage,
+  width: 160,
+  height: 160,
+  densities: [1, 2],
+  quality: 80,
+});
 ---
 
 <Layout title="Link tree | Serhii Shramko">
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    type="image/webp"
+    href={profileImage.src}
+    imagesrcset={profileImage.srcSet.attribute}
+  />
   <div class="container">
     <Profile />
     <main>
