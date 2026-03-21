@@ -8,6 +8,9 @@ interface Props {
 }
 
 const { title, description = "Serhii Shramko's link tree" } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/og-image.png', Astro.site);
 ---
 
 <!doctype html>
@@ -20,21 +23,22 @@ const { title, description = "Serhii Shramko's link tree" } = Astro.props;
   <link rel="manifest" href="/site.webmanifest">
   <meta name="description" content={description}/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="canonical" href={canonicalURL} />
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://links.shramko.dev/">
+  <meta property="og:url" content={canonicalURL}>
   <meta property="og:type" content="website">
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
-  <meta property="og:image" content="https://links.shramko.dev/og-image.png">
+  <meta property="og:image" content={ogImage}>
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="links.shramko.dev">
-  <meta property="twitter:url" content="https://links.shramko.dev/">
+  <meta property="twitter:domain" content={canonicalURL.hostname}>
+  <meta property="twitter:url" content={canonicalURL}>
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
-  <meta name="twitter:image" content="https://links.shramko.dev/og-image.png">
+  <meta name="twitter:image" content={ogImage}>
 
   <link rel="sitemap" href="/sitemap-index.xml"/>
   <title>{title}</title>
@@ -61,7 +65,7 @@ const { title, description = "Serhii Shramko's link tree" } = Astro.props;
   html {
     font-family: 'Inter', sans-serif;
     background: var(--zinc-950);
-    color: var(--zinc-50)
+    color: var(--zinc-50);
   }
 
   .container {
