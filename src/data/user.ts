@@ -20,6 +20,7 @@ interface UserLink {
 
 export const name = "Serhii Shramko";
 export const profession = "Senior Software Engineer";
+export const companyName = "BetterMe";
 
 export const links: UserLink[] = [
   {

@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import UserProfileImage from "../assets/user-profile-image.png";
 import { name, profession } from "../data/user";
+import { companyName } from "../data/user.ts";
 ---
 
 <header class="profile">
@@ -21,7 +22,10 @@ import { name, profession } from "../data/user";
   </div>
   <div class="profile__data">
     <h1 class="profile__name">{name}</h1>
-    <p class="profile__profession">{profession}</p>
+    <p class="profile__profession">{profession} at <a
+      class="profile__link" href="https://betterme.world/" target="_blank"
+    >
+      {companyName}</a></p>
   </div>
 </header>
 
@@ -67,5 +71,9 @@ import { name, profession } from "../data/user";
   .profile__profession {
     font-size: 0.875rem;
     color: var(--zinc-400);
+  }
+
+  .profile__link {
+    color: inherit;
   }
 </style>
