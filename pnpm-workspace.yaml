@@ -1,0 +1,8 @@
+allowBuilds:
+  esbuild: true
+overrides:
+  # @vercel/routing-utils@6.6.0 still pins path-to-regexp 6.1.0 (GHSA-9wv6-86v2-598j, high).
+  # Upstream ships 6.3.0 only under the `path-to-regexp-updated` alias, so the pin is still needed.
+  path-to-regexp: ^6.3.0
+minimumReleaseAgeExclude:
+  - astro@7.3.3
